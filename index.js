@@ -22,3 +22,27 @@ function domIdWriteInfo(id,info){
 let htmlInfo =`<span style="color:red"> color red :) </span>`
 domIdWriteInfo('greeting',htmlInfo)
 domIdWriteInfo("info" ,greetings2("soner","hendem"))
+//-----------------------------------------------------------------------
+
+
+function bmi(weight, height) {
+    const result = weight/(height*height) 
+    if (result <= 18.5) {
+      return "Underweight";
+    } else if (result <= 25) {
+      return "Normal";
+    } else if (result <= 30) {
+      return "Overweight";
+    } else {
+      return "Obese";
+    } 
+}
+  let weight =90;
+  let height =1.80;
+  console.log(bmi(weight,height)) 
+  console.log(bmi(40,height)) 
+  console.log(bmi(70,height)) 
+  console.log(bmi(100,height)) 
+
+ 
+   
