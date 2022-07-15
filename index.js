@@ -57,24 +57,24 @@ console.log(opposite(number))
 console.log(opposite(-15))
 console.log(opposite(12))
 //---------------------------------------------------------------
-function basicOp(operation, value1, value2) {
-  switch (operation) {
-      case '+':
-          return value1 + value2;
-      case '-':
-          return value1 - value2;
-      case '*':
-          return value1 * value2;
-      case '/':
-          return value1 / value2;
-      default:
-          return 0;
-  }
-}
-let value1 = 20;
-let value2 = 30;
-let operation =["+"];
-console.log(basicOp())
+// function basicOp(operation, value1, value2) {
+//   switch (operation) {
+//       case '+':
+//           return value1 + value2;
+//       case '-':
+//           return value1 - value2;
+//       case '*':
+//           return value1 * value2;
+//       case '/':
+//           return value1 / value2;
+//       default:
+//           return 0;
+//   }
+// }
+// let value1 = 20;
+// let value2 = 30;
+// let operation =["+"];
+// console.log(basicOp())
 
  
    
