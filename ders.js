@@ -143,8 +143,31 @@ for(sonuclar in color1){
         document.write('bnu renkleri sevmiyorum = ' + color1[sonuclar] + '<br/>')
     }
 }
+//------------------------------------
+document.write('<hr />' +'İÇ İÇE DİZİLERDE FON İN DÖNGÜSÜ.!'+'<hr />') 
+let description=['soner','hasan','yaren','tugce',['huseyin','nuran','ibrahim',['mor','turuncu','haki'],'sevure',],'duygu','emre','hasan'];
 
+document.write(description + '<br/>')
 
+let sonuc4;
+for(sonuc4 in  description){
+    if(Array.isArray(description[sonuc4])){
+        let firtCheck;
+        for(firtCheck in description[sonuc4]){
+            if(Array.isArray(description[sonuc4][firtCheck])){
+                let lastCheck;
+                for(lastCheck in description[sonuc4][firtCheck]){
+                    document.write(description[sonuc4][firtCheck][lastCheck] + '<br/>');
+                }
+            }else{
+                document.write(description[sonuc4][firtCheck] + '<br/>')
 
+            }
+        }
+    }else{
+     document.write(description[sonuc4] + '<br/>')
+
+    }
+}
 
 
