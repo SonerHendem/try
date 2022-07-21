@@ -169,5 +169,18 @@ for(sonuc4 in  description){
 
     }
 }
+//----------------------------------------------
+document.write('<hr />' +' .ok boyutlu dizinin uzunluğunu lenght ile döndürme..!'+'<hr />') 
+let color3 = ['black','red','yellow',['blue','pinkkkk','purple'],'orange','handmade']
+document.write(color3 + '<br/>')
+let  operation = color3.length;
+document.write('dizinin eleman sayısı = ' + operation + '<br/>')
+let  operation1 = color3[3].length;
+document.write('alt dizinin eleman sayısı = ' + operation1 + '<br/>')
+let  operation2 = color3[3][1].length;
+document.write('alt dizinin elemanın harf sayısı = ' + operation2 + '<br/>')
 
+
+
+ 
 
