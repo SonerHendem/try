@@ -181,6 +181,73 @@ let  operation2 = color3[3][1].length;
 document.write('alt dizinin elemanın harf sayısı = ' + operation2 + '<br/>')
 
 
+//---------------------------------------------------
+document.write('<hr />' +' DELETE METHOD (belirtilen elemanları siler)!'+'<hr />') 
+let belongings =['key','mause','TV','pen','paper']
+delete belongings[1] //mause delete
+document.write(belongings + '<br/>')
+
+//-----------------------------
+document.write('<hr />' +' pop() METHOD!   (dizinin son elamanını siler.)'+'<hr />') 
+let belongings1 =['monitor','speaker','leptop','window','table']
+document.write(belongings1 + '<br/>')
+let rusult3 = belongings1.pop();
+document.write(belongings1 + '<br/>')
+
+
+//-------------------------------------
+document.write('<hr />' +' shift() METHOD!   (dizinin ilk elamanını siler.)'+'<hr />') 
+
+
+let names5 = ['soner','aysel','hacer','fatme']
+document.write('dizinin ilk hali : '+names5  + '<br/>')
+let result4= names5.shift()
+document.write('dizinin silinen elemanı : '+result4 + '<br/>')
+
+document.write('dizinin son hali : '+names5 + '<br/>')
+
+//-------------------------------------
+document.write('<hr />' +' push() METHOD!   (dizinin ilk elamanını siler.)'+'<hr />') 
+
+let fruits1 =['apple','pear','apricot','cherry'];
+
+document.write(fruits1 + '<br/>')
+let result56 = fruits1.push('pineapple') 
+
+document.write(fruits1 + '<br/>')
+
+//-------------------------------------
+document.write('<hr />' +' unshift() METHOD!   (dizinin başına eleman veya elemanalr ekler..)'+'<hr />') 
 
  
+let vegatables = ['spinach','chard','lettuce','leek']
+
+document.write(vegatables + '<br/>')
+let result5 = vegatables.unshift('parsley' ,'celery');
+document.write(vegatables + '<br/>')
+document.write('diznin eleman sayısı : '+result5 + '<br/>')
+
+//-------------------------------------
+document.write('<hr />' +' splice() METHOD!   (dizinin başına eleman veya elemanalr ekler veya siler. sildiği elemanları geri döndürür.)'+'<hr />') 
+let vegatables1 = ['parsley','celery','spinach','chard','lettuce','leek']
+document.write(vegatables1 + '<br/>')
+let result6 = vegatables1.splice(1,2); //1 numaradan başla 2 adet eleman sil.
+document.write(vegatables1 + '<br/>')
+document.write('silinen elemanlar = ' + result6 + '<br/>')
+let result8 = vegatables1.splice(1,0 ,'domates','patates'); //1 numaradan başla 2 adet eleman sil.
+document.write(vegatables1 + '<br/>')
+// document.write('eklenen elemanlar = ' + result8 + '<br/>')
+
+
+
+
+
+//--------------------------------------------
+document.write('<hr />' +' slice() METHOD!   (dizide verilen parametreler arasındaki değerleri alıp yeni bir dizi oluşturur.)'+'<hr />') 
+let color4 = ['black','red','yellow','blue','pinkkkk','purple','orange','handmade']
+document.write(color4 + '<br/>')
+
+let newcolor = color4.slice(1,4)
+document.write(newcolor + '<br/>')
+
 
