@@ -246,8 +246,24 @@ document.write(vegatables1 + '<br/>')
 document.write('<hr />' +' slice() METHOD!   (dizide verilen parametreler arasındaki değerleri alıp yeni bir dizi oluşturur.)'+'<hr />') 
 let color4 = ['black','red','yellow','blue','pinkkkk','purple','orange','handmade']
 document.write(color4 + '<br/>')
-
 let newcolor = color4.slice(1,4)
 document.write(newcolor + '<br/>')
 
 
+//--------------------------------------------
+document.write('<hr />' +' copyWithin() METHOD!(verilen paramatreler arasındaki dizi elemanalrının değiştirir ve değeri geri döndrürr.)(d.)'+'<hr />')
+
+let names4 =['soner','hendem','selim','duru','yagız',"tuğla",'alçı','hatice','helin','gulce']
+document.write(names4 + '<br/>')
+names4.copyWithin(1, 3, 5); // 3ve 5 in arasındaki parametreleri siler 1. parametreden itibaren yazar.
+//1. parametre hedef /2. parametde başlangıç / 3. parametre bitiş.
+document.write(names4 + '<br/>')
+
+
+
+
+//--------------------------------------------
+document.write('<hr />' +' fill() METHOD!( verilen parametreler arasındaki değerleri siler verilen değeri oraya yazar..)(d.)'+'<hr />')
+let vegatables2 = ['parsley','celery','spinach','chard','lettuce','leek']
+vegatables2.fill('karnıbahar',1,3)
+document.write(vegatables2 + '<br/>')
