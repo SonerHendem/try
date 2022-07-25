@@ -265,5 +265,129 @@ document.write(names4 + '<br/>')
 //--------------------------------------------
 document.write('<hr />' +' fill() METHOD!( verilen parametreler arasındaki değerleri siler verilen değeri oraya yazar..)(d.)'+'<hr />')
 let vegatables2 = ['parsley','celery','spinach','chard','lettuce','leek']
-vegatables2.fill('karnıbahar',1,3)
+vegatables2.fill('karnıbahar',1,3)//parametre belirtilmezsse tüm değerler karnıbahar olur.   değer/başlangıç/bitiş
 document.write(vegatables2 + '<br/>')
+
+
+//--------------------------------------------
+document.write('<hr />' +' concat() METHOD!( birleştirme metodudur dizileri veya elemanları  dahil ederek yeni bir dizi oluşturur. )'+'<hr />')
+let man = ['soner','burak','yasin','halil']
+let woman =['dugu','nuran','hacer','tuğçe']
+
+document.write(man + '<br/>')//1. dizi
+
+document.write(woman + '<br/>')//2. dizi
+let names6 = man.concat(woman)// birden fazla dizi birleştirile bilir. virgün yardımın ile örnek => man.concat(woman, renkler, sehirler)  4 diziyi birleştirmiş olduk.
+document.write(names6 + '<br/>')
+
+
+//-------------------------------------
+document.write('<hr />' +'join() METHOD!   (tanımlanan diziyi düz bir metin e çevirir işlem gören dizinin sonucu artık dizi değildir. ve değeri geriye döndürür '+'<hr />')
+
+let colors1 =['sar','pembe','turuncu','mor']
+let check1 = Array.isArray(colors1)
+document.write('('+check1+')'+colors1 + '<br/>')
+
+let result7 =colors1.join()
+let check2 = Array.isArray(result7)
+document.write('('+check2+')'+result7 + '<br/>') 
+
+
+
+//--------------------------------------------
+document.write('<hr />' +' toString() METHOD!   (tanımlanan diziyi string bir metin haline çevirir ve düz bir metin oluşturur değeri geriye döndürür )'+'<hr />')
+let names7 = ['soner','tugce','duygu','nuran','ibrahim']
+document.write(names7 + '<br/>')
+let nameCheck = typeof names7;
+document.write(nameCheck + '<br/>')
+
+
+let result9 = names7.toString();
+document.write(result9 + '<br/>')
+let nameCheck1 = typeof result9;
+document.write(nameCheck1 + '<br/>')
+
+
+
+//--------------------------------------------
+document.write('<hr />' +' valueOf() METHOD!   (üzerinde çalışılan dizi değerini tam anlamıyla aktarım sağlıyarak yeni bir dizi oluşturur oluşturduğu diziyi geri döndürür. )'+'<hr />')
+let names8 = ['soner','tuğce','nuran','ibrahim']
+document.write(names8 + '<br/>')
+
+let newNames = names8.valueOf();// diziyi tam anlamıyla kopyalar yeni bir diiz oluşturur dizinin üzerinde sonradan yapılacak değişiklkler olursa algılar ve düzeltme yapar.
+document.write(newNames + '<br/>')
+
+names8.fill('volkan');
+document.write(names8 + '<br/>')
+document.write(newNames + '<br/>')// newNames değişkenş fiil() metodu ile yapılan değişiklikten etkilenip değişiklikleri beniimsedi ve değişim sağladı.
+
+
+
+
+
+//-------------------------------------
+document.write('<hr />' +'indexOf() METHOD! ( dizi içerisindeki paramerik olarak verilen değeri arar ve ilk eşleşmeyi sağlayan elemaın index değerini geriye döndürür) '+'<hr />')
+let names9 = ['soner','duygu','hacer','asım','emre']
+
+document.write(names9 + '<br/>')
+
+let result10 = names9.indexOf('duygu')
+
+
+document.write(result10 + '<br/>') ///sonuc duygu duygu ismi 2 adet olsaydı ilk eşleşen değerin idex değerini verecekti.
+
+
+
+
+
+//-------------------------------------
+document.write('<hr />' +'lastIndexOf() METHOD! Tanımı = dizi içerisinde parametrik verilen değeri arar ve son eşleşmeyi sağlayan dizi elamanının index değerini geriye döndürü '+'<hr />')
+let colors2 = ['black','purple','green','orange','pink']
+document.write(colors2 + '<br/>')
+
+let result11 = colors2.lastIndexOf('orange');
+document.write(result11 + '<br/>')
+
+
+//-------------------------------------
+document.write('<hr />' +'find() METHOD! Tanımı = Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerine tek tek olmak üzere çalıştırır ve dizi içerisinde parametrik olarak verilen değeri arar. ve ilk eşleşmeyi geriye döndürü. '+'<hr />')
+
+// function deneme(eleman,sira, referans){
+//  return sira == 3;
+// }
+
+
+// let numbers =[1,2,3,4,5,6,7,]
+// document.write(numbers + '<br/>')
+
+// let result12 = numbers.find(deneme);
+
+
+// document.write(result12 + '<br/>')
+
+
+
+//-------------------------------------
+document.write('<hr />' +'indexOf() METHOD! Tanımı = Kendisine parametre olarak verilen fonksşyonu dizideki her eleman olmak üzere tek tek çalıştırır. ve dizi içerisinde parametrik olarak verilen değeri arar ilk eşleşmeyi sağlayan dizi elemanın index değerini geriye dönrürür '+'<hr />')
+// 1. her işlemde elde edilen dizi elemanı
+// 2. her işlemde elde edilen dizi elemanının index değeri
+// 3. her tekrarda diziyi tutand eğerin referansı.
+function denemeler(eleman,sira,referans){
+ return eleman == 'leptop'; // 2 numaralı index değeri
+ 
+}
+
+
+let belongings2 =['monitor','speaker','leptop','window','table']
+document.write(belongings2 + '<br/>')
+
+let result13 = belongings2.findIndex(denemeler);
+
+
+document.write(result13 + '<br/>')
+
+
+//-------------------------------------
+//  document.write('<hr />' +'indexOf() METHOD! Tanımı =    '+'<hr />')
+
+//  document.write(names8 + '<br/>')
