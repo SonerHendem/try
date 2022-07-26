@@ -377,14 +377,59 @@ function denemeler(eleman,sira,referans){
  
 }
 
-
 let belongings2 =['monitor','speaker','leptop','window','table']
 document.write(belongings2 + '<br/>')
 
 let result13 = belongings2.findIndex(denemeler);
-
-
 document.write(result13 + '<br/>')
+
+
+
+//-------------------------------------
+document.write('<hr />' +'reduce() METHOD! Tanımı =Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde soldan sağa tek tek olmak üzere çalıştırır ve tek bir değer oluştyrarak oluşturduğu değeri geriye döndürü.    '+'<hr />')
+// 1. Parametre = dizi içerinde mevcut değer öncesindeki değerlerin toplamı/birleşimi.
+// 2. Parametre = her işlemde elde edilen dizi elemanı
+// 3. Parametre = her işlemde elde edilen dizi elemanının index değeri.
+// 4. Parametre = her tekrarda diziyi tutan değişkenin referansı.
+function deneme1(deger,eleman1,sira1,degisken){
+//    document.write(deger + '<br/>') // değerleri yazar ve birbiri ile toplar 1. parametre kuralı
+//     document.write(eleman1 + '<br/>') // elemanları yazar 100,200,300,400,500 2. parametre kuralı
+//     document.write(sira1 + '<br/>') // index numaralarını yaar 0,1,2,3,4   3. parametre kuralı
+//     document.write(degisken + '<br/>') // parametreleri yazar 100,200,300,400,500 4. parametre kuralı.
+ 
+    return deger+eleman1; // verilen değerleri topladık. son elemanı almadıgı için +1 eleman yaptık.
+}
+
+let numbers1 = [100,200,300,400,500]
+
+document.write(numbers1 + '<br/>')
+
+let result14 = numbers1.reduce(deneme1)
+document.write(result14 + '<br/>')
+
+
+//-------------------------------------
+document.write('<hr />' +'reduceRight() METHOD! Tanımı =Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde sağdan sola tek tek olmak üzere çalıştırır ve tek bir değer oluştyrarak oluşturduğu değeri geriye döndürü'+'<hr />')
+// reduce deki büütün kurallar burdada geçerli.
+
+
+
+//-------------------------------------
+document.write('<hr />' +'reverse() METHOD! Tanımı =dizi içerisindeki sıralamayı tersine çevirir[1,2,3]=[3,2,1] ve sonucu geriye döndürür.'+'<hr />')
+let fruits2 =['apple','pear',['banana','starbery'],'apricot','cherry']; // çok boyutlu dizilerde  boyutun içindeki dizi elemanlarını ters çvirmez!
+
+document.write(fruits2 + '<br/>')
+
+let newFruits = fruits2.reverse();
+document.write(newFruits + '<br/>')
+
+
+
+
+
+
+
+
 
 
 //-------------------------------------
