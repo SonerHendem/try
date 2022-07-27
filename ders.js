@@ -425,6 +425,46 @@ document.write(newFruits + '<br/>')
 
 
 
+//-------------------------------------
+document.write('<hr />' +'sort() METHOD! Tanımı = dizi içeriğinin sıralanmasını sağlar motod unicode(evrensel kod) olarak çalışır   '+'<hr />')
+let names10 = ['soner','duygu','nuran','ibrahim']
+document.write(names10 + '<br/>')
+names10.sort();
+document.write(names10 + '<br/>')//duygu ibrahişm nuran soner olarak yazar a-z arası sıralar
+
+
+let numbers2 = [1,3,5,10.2,8.3,4,44,77,100,110]
+document.write(numbers2 + '<br/>')
+numbers2.sort();
+document.write(numbers2 + '<br/>') //1,10.2,100,110,3,4,44,5,77,8.3  = 1-2-3 basamaklar 0 a en yakın olan basamakları seçerek sıralar ve .(nokta ) olan sayıları en başta sıralar
+
+let mix = [10,1.2,55,'soner','duygu',88,10.2,'nuran',99,101,210,'ibrahim',44]
+document.write(mix + '<br/>')
+
+mix.sort();
+document.write(mix +'  = sort() metod kullanılan karışık dizide rakamlar öncelikli olarak sıralanır.'+'<br/>')
+
+
+
+
+
+
+
+//-------------------------------------
+document.write('<hr />' +'forEach() METHOD! Tanımı =kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerine tek tek çalıştır ve geriye herhangi bir değer döndürmez.    faket istenirse ilgili değerlere erişilebilir. '+'<hr />')
+//1. parametre = HER İŞLEMDE ELDE EDİLENDİZİ ELEMANI
+//1. parametre = HER İŞLEMDE ELDE EDİLEN DİZİ ELEMANININ İNDEX'İ
+//1. parametre = TEKRARLAMA İŞLEMİ İÇİN DİZİNİN ATANDIĞI DEĞİŞKEN REFERANSI
+function result15(eleman2,sira2,degisken2){//otomatik gelen değişkenler akılda kolay kalması için 1.2.3 kural
+        sonuc5 += eleman2
+}
+let sonuc5 = 0;
+let numbers3 = [ 2,4,6,8,10,12,14,16,18,20]
+document.write(numbers3 + '<br/>')
+
+numbers3.forEach(result15)
+
+document.write(sonuc5+ '<br/>')
 
 
 
