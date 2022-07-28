@@ -456,7 +456,8 @@ document.write('<hr />' +'forEach() METHOD! Tanımı =kendisine parametre olarak
 //1. parametre = HER İŞLEMDE ELDE EDİLEN DİZİ ELEMANININ İNDEX'İ
 //1. parametre = TEKRARLAMA İŞLEMİ İÇİN DİZİNİN ATANDIĞI DEĞİŞKEN REFERANSI
 function result15(eleman2,sira2,degisken2){//otomatik gelen değişkenler akılda kolay kalması için 1.2.3 kural
-        sonuc5 += eleman2
+    sonuc5 += eleman2 // dizinin her elemanını birbiriyle toplar
+    
 }
 let sonuc5 = 0;
 let numbers3 = [ 2,4,6,8,10,12,14,16,18,20]
@@ -470,6 +471,16 @@ document.write(sonuc5+ '<br/>')
 
 
 
+
+//-------------------------------------
+//  document.write('<hr />' +'indexOf() METHOD! Tanımı =    '+'<hr />')
+
+//  document.write(names8 + '<br/>')
+
+//-------------------------------------
+//  document.write('<hr />' +'indexOf() METHOD! Tanımı =    '+'<hr />')
+
+//  document.write(names8 + '<br/>')
 
 
 //-------------------------------------
