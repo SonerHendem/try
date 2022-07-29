@@ -473,17 +473,110 @@ document.write(sonuc5+ '<br/>')
 
 
 //-------------------------------------
-//  document.write('<hr />' +'indexOf() METHOD! Tanımı =    '+'<hr />')
+document.write('<hr />' +'some() METHOD! Tanımı = kendisine parametre olarak belirtilen fonksiyon true değeri döndürene kadar. dizi elemanları üzerinde sıra ile gezinilmesini sağlar.   '+'<hr />')
+//1. parametre => her işlemde elde edilen dizi elemanı  
+//1. parametre => her işlemde elde edilen dizi elemanının index değeri.
+//1. parametre => her tekrarlama işleminde diziyi tutan değişkeninreferansı.
+function numbers_4(eleman,sira,degisken){
+    sonuc_1 =eleman;
+    return eleman % 5==0;
+}
 
-//  document.write(names8 + '<br/>')
+let sonuc_1 = 0;
+let  numbers4 = [ 16,23,65,32,33,19]
+document.write(numbers4 + '<br/>')
+
+numbers4.some(numbers_4)
+document.write(sonuc_1 + '<br/>')
+
+//-------------------------------------
+document.write('<hr />' +'every() METHOD! Tanımı =kendisine parametre olarak verilen fonksiyon false değeri döndürene kadar dizi elemanları üzerinde gezilmesini sağlar.'+'<hr />')
+//1. parametre => her işlemde elde edilen dizi elemanı  
+//1. parametre => her işlemde elde edilen dizi elemanının index değeri.
+//1. parametre => her tekrarlama işleminde diziyi tutan değişkeninreferansı.
+function result16(eleman,sira,degisken){
+ result_ =eleman;
+ return eleman % 5 ==0;
+}
+let result_ = '';
+let number5 = [100,55,44,700,400,1,25,33,343,55,89,47] // gelen ilk sonuç yazdırılır sonuc :
+document.write(number5 + '<br/>')
+number5.every(result16);
+document.write('gelen ilk sonuç: '+result_ + '<br/>')
+
+
+
+//-------------------------------------
+document.write('<hr />' +'filter() METHOD! Tanımı =kendisine parametre olark verilen fonksiyonu dizideki her eleman üzerinde çalıştırır. fonksiyonun geriye true değerini döndüren tüm elemanalrını kopyalıyarak yeni bir dizi oluşturur oluşturduğu diziyi geriye döndürür.'+'<hr />')
+//1. parametre => her işlemde elde edilen dizi elemanı  
+//2. parametre => her işlemde elde edilen dizi elemanının index değeri.
+//3. parametre => her tekrarlama işleminde diziyi tutan değişkeninreferansı.
+function search(eleman,sira,degisken){
+    // return eleman %2 !==0;  // tek sayı döndürür 
+    return eleman.length>=6; // elemanların karakteri 6 dan büyük olanları çağır.
+}
+// let number6 = [1,2,3,4,5,6,7,8,9,10]
+let number6 = ['turkey','germany','england','jordan','usa','china','newzeland','holand','rusia','korea']
+document.write(number6 + '<br/>')
+
+let oddNumber = number6.filter(search) // fonksiyonu çağır.
+document.write(oddNumber + '<br/>')
+
+
+//-------------------------------------
+document.write('<hr />' +'map() METHOD! Tanımı =kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde çalıştırır. fonksiyonu her eleman için geriye döndürdüğü değerlerden yeni bir dizi oluştutur ve yeni dizi değerini geriye döndürür.'+'<hr />')
+//1. parametre => her işlemde elde edilen dizi elemanı  
+//2. parametre => her işlemde elde edilen dizi elemanının index değeri.
+//3. parametre => her tekrarlama işleminde diziyi tutan değişkeninreferansı.
+
+function sample(eleman,sira,degisken){
+    let result17 = eleman *100;    
+    return result17;
+}
+let number7 = [1,2,3,4,5,6,7,8,9,10]
+
+document.write(number7+ '<br/>')
+let newMap = number7.map(sample);
+document.write(newMap+ '<br/>')
+
+//-------------------------------------
+// not = diziye etki ettiğimiz için Array. yazdık.
+Array.prototype.avarage = function(){
+    let result17 = 0 ;
+    for(let i = 0; i<this.length; i++){
+        result17 += this[i];
+    }
+    let sonuc3 = result17/this.length;
+    return sonuc3;
+}
+document.write('<hr />' +'avarage() METHOD! Tanımı = number (sayi) veri türü içerikli dizini her elemanıüzerinde tek tek olmak üzere çalışır ve tüm elemanların ortalamasını bularak buldugu değeri geriye dönrür.    '+'<hr />')
+let number8 = [10,20,30,40,50,60,70,80,90,100]
+document.write(number8 + '<br/>')
+let avarage1 = number8.avarage() 
+document.write(avarage1 + '<br/>')
+
+//-------------------------------------
+document.write('<hr />' +'suffle() METHOD! Tanımı =  dizinin her elemanı üzerinde tek tek çalışarak tüm elemanları karıştırır ve yeni bir dizi oluşturur oluşturduğu değeri geriye döndürür.  '+'<hr />')
+Array.prototype.shuffle = function(){ // not dizinin prototipine ulaş ve shuffle metodunu kullan.
+    let numberOfElements = this.length;
+    while(--numberOfElements >0){
+        let randomNumber = Math.floor(Math.random()*(numberOfElements + 1));
+        let gecicideger = this[randomNumber];
+        this[randomNumber] = this[numberOfElements];
+        this[numberOfElements] = gecicideger;
+        return this;
+    }
+}
+
+
+let contents = ['A','B','C','D','E']
+document.write(contents + '<br/>')
+let mix1 = contents.shuffle();
+document.write(mix1 + '<br/>')
+
 
 //-------------------------------------
 //  document.write('<hr />' +'indexOf() METHOD! Tanımı =    '+'<hr />')
 
 //  document.write(names8 + '<br/>')
 
-
-//-------------------------------------
-//  document.write('<hr />' +'indexOf() METHOD! Tanımı =    '+'<hr />')
-
-//  document.write(names8 + '<br/>')
