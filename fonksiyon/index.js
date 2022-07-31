@@ -24,6 +24,45 @@ document.write('değişkenler global bir alandan local biralana(fonksiyon) çağ
 
 
 
+//------------------------------------------
+document.write('<hr />' +'Fonksiyon() = FONKSİYONLARDA RETURN İFADESİ! (RETURN.) '+'<hr />')
+function demo2(){
+    let name = 'soner'
+    let surName = 'hendem'
+    return name , surName; // return e 1 adet tanımlanır. en son yazılan çağırıldı.(hendem)
+}
+let sonuc = demo2();
+
+document.write(sonuc + '<br/>')
+//----------------
+function demo3(){
+    let name = 'soner'
+    let surName = 'hendem'
+    let coklu = [name,surName];
+    return coklu;
+}
+let sonuc1 = demo3();
+
+document.write(sonuc1 + '<br/>')
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  document.write(names8 + '<br/>')
+//  document.write(names8 + '<br/>')
+//  document.write(names8 + '<br/>')
+//  document.write(names8 + '<br/>')
+
+ 
 //  document.write(names8 + '<br/>')
 
 
