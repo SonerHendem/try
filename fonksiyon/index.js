@@ -49,7 +49,49 @@ document.write(sonuc1 + '<br/>')
 
 
 
+// //-------------------------------------
+document.write('<hr />' +'Fonksiyon() =Otomatik çalışan fonksiyon'+'<hr />')
+// (function oto(){
+//     document.write('selamlar');
+// })();
 
+
+document.write('<hr />' +'Fonksiyon() =Parametre tanımlama ve fonksiyonu çağırma.'+'<hr />')
+
+
+function text(name1){
+    document.write('merhaba '+name1+ ' nasılsın iyimisin? '+ '<br/>')
+}
+text('soner');
+
+function topla(sayi1,sayi2){
+let sonuc =sayi1*sayi2;
+document.write(sonuc+'<br/>')
+}
+topla(27,5)
+//------------------------------------------
+document.write('<hr />' +'Fonksiyon() =fonksiyondaki parametrelere varsayılan değer ataması yapma'+'<hr />')
+
+function test1(tutar,kdv=18){
+    let sonuc1 =(tutar/100)*kdv;
+    let sonuc2 = tutar+sonuc1;
+    document.write('tutar : '+tutar +'<br/>')
+
+    document.write('kd tutarı :'+sonuc1+'<br/>')
+    document.write('kd tutarı :'+sonuc2+'<br/>')
+
+    }
+    test1(100)//parametre içine virgül yapıp yeni bir aprametre yazarsak yukarda belirtilen 18 iptal olur.
+
+
+
+//-------------------------------------
+document.write('<hr />' +'Fonksiyon() =otomatik çalışan fonksiyona parametre tanımlama ve fonksiyonu çapırma.'+'<hr />')
+let demo4 = function(no1,no2){
+    document.write(no1 +'<br/>')
+    document.write(no2 +'<br/>')
+
+}('merhaba','nasılsın');
 
 
 
