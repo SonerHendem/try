@@ -92,6 +92,17 @@ let demo4 = function(no1,no2){
     document.write(no2 +'<br/>')
 
 }('merhaba','nasılsın');
+document.write('<hr />' +'Fonksiyon() =otomatik çalışan fonksiyona parametre tanımlama ve fonksiyonu çapırma.'+'<hr />')
+let demo24 = function(no1,no2){
+    document.write(no1 +'<br/>')
+    document.write(no2 +'<br/>')
+
+}('merhaba','nasılsın');document.write('<hr />' +'Fonksiyon() =otomatik çalışan fonksiyona parametre tanımlama ve fonksiyonu çapırma.'+'<hr />')
+let demo44 = function(no1,no2){
+    document.write(no1 +'<br/>')
+    document.write(no2 +'<br/>')
+
+}('merhaba','nasılsın');
 
 
 
