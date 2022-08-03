@@ -92,20 +92,97 @@ let demo4 = function(no1,no2){
     document.write(no2 +'<br/>')
 
 }('merhaba','nasılsın');
-document.write('<hr />' +'Fonksiyon() =otomatik çalışan fonksiyona parametre tanımlama ve fonksiyonu çapırma.'+'<hr />')
-let demo24 = function(no1,no2){
-    document.write(no1 +'<br/>')
-    document.write(no2 +'<br/>')
-
-}('merhaba','nasılsın');document.write('<hr />' +'Fonksiyon() =otomatik çalışan fonksiyona parametre tanımlama ve fonksiyonu çapırma.'+'<hr />')
-let demo44 = function(no1,no2){
-    document.write(no1 +'<br/>')
-    document.write(no2 +'<br/>')
-
-}('merhaba','nasılsın');
 
 
 
+
+//------------------------------------------------
+document.write('<hr />' +'Fonksiyon(ÖNEMLİ!!!!) =Fonksiyondan başkar bir fonksiyona değer döndürme. '+'<hr />')
+function paraBirimi(birim,tutar){
+    if(birim=='Türk Lirası'){
+        var kur =1;
+    }else if(birim=='Amerikan Doları'){
+        var kur =3;// kurları let ile tanımlıyamadık sadece var ile tanımlandı.
+    }else if(birim =='Eruo'){
+        var kur=4;
+    }
+   return tutarHesapla(kur,tutar);
+}
+
+function tutarHesapla(gelenkur,gelentutar){
+    let hesapYap = gelenkur * gelentutar;
+    document.write(hesapYap +'<br/>')
+
+}
+paraBirimi('Amerikan Doları',100);
+
+
+
+
+document.write('<hr />' +'Fonksiyon() = çok boyutlun fonksiyonlarla iç içe çalışma.'+'<hr />')
+
+function deneme(voi1,voi2){
+
+    function test1(son1,son2){
+        document.write(son1 +'<br/>')
+        document.write(son2 +'<br/>')
+
+    }
+    return test1(voi1,voi2);
+}
+deneme(3,6);
+
+
+
+
+
+
+
+document.write('<hr />' +'Fonksiyon() = ,ç içe çok boyutlu fonskiynlarda parametre tanımlama ve fonksiyonu çağırma.'+'<hr />')
+function birr(a1,a2){
+    function iki(b1,b2){
+        function uc(c1,c2){
+            return a1+a2+b1+b2+c1+c2;
+        }
+        return uc;
+    }
+    return iki;
+}
+let sonuc3 = birr(5,7)(10,7)(8,4)//1. parametre 5 /2.10/3.8
+// let deg1 = 5;
+// let deg2 = 6; 
+// let deg3 = 21;
+// let sonuc4 = bir(deg1)(deg2)(deg3); sonuc 3 yerinde değişken oluşturup ta verileri alabiliriz.
+document.write(sonuc3+'<br/>')
+
+
+
+
+document.write('<hr />' +'Fonksiyon() =iç içe çok boyutlu fonksiyonlarda parametre tanımlama ve çapı'+'<hr />')
+
+
+
+function birrr(aaa){
+    function ikii(bbb){
+        function ucc(ccc){
+            function dortt(ddd){
+                let sonuc5 =aaa+bbb+ccc+ddd;
+                document.write(sonuc5+'<br/>')
+    
+            }
+            dortt(3);
+          
+        }
+        ucc(7);
+    }
+    ikii(3);
+}
+birrr(7);
+
+
+
+// document.write('<hr />' +'Fonksiyon() = '+'<hr />')
+// document.write('<hr />' +'Fonksiyon() = '+'<hr />')
 
 
 
