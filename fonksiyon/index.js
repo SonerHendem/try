@@ -156,12 +156,9 @@ let sonuc3 = birr(5,7)(10,7)(8,4)//1. parametre 5 /2.10/3.8
 document.write(sonuc3+'<br/>')
 
 
-
+//---------------------------------------------------------
 
 document.write('<hr />' +'Fonksiyon() =iç içe çok boyutlu fonksiyonlarda parametre tanımlama ve çapı'+'<hr />')
-
-
-
 function birrr(aaa){
     function ikii(bbb){
         function ucc(ccc){
@@ -178,6 +175,25 @@ function birrr(aaa){
     ikii(3);
 }
 birrr(7);
+
+//--------------------------------------------
+
+document.write('<hr />' +'Fonksiyon() =iç içe çok boyutlu fonksiyonlarda alt fonksiyonda parametre değerini alma ve çağırma '+'<hr />')
+function demobir(deger){
+    function test2(){
+        function test3(){
+            document.write(deger+'<br/>')
+
+        }
+        return test3();
+
+    }
+    return test2();
+}
+demobir('soner hendem');
+
+//----------------------------------------
+document.write('<hr />' +'Fonksiyon() =kendi kendini çağıran fonksiyon'+'<hr />')
 
 
 
