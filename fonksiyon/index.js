@@ -194,8 +194,11 @@ demobir('soner hendem');
 
 //----------------------------------------
 document.write('<hr />' +'Fonksiyon() =kendi kendini çağıran fonksiyon'+'<hr />')
-
-
+function soner(a,b){
+    let sonuc12 =a*b;
+    document.write(sonuc12)
+}
+soner(12,7)
 
 // document.write('<hr />' +'Fonksiyon() = '+'<hr />')
 // document.write('<hr />' +'Fonksiyon() = '+'<hr />')
