@@ -193,20 +193,73 @@ function demobir(deger){
 demobir('soner hendem');
 
 //----------------------------------------
-document.write('<hr />' +'Fonksiyon() =kendi kendini çağıran fonksiyon'+'<hr />')
-function soner(a,b){
-    let sonuc12 =a*b;
-    document.write(sonuc12)
+// document.write('<hr />' +'Fonksiyon() =kendi kendini çağıran fonksiyon'+'<hr />')
+// function soner(a,b){
+//     let sonuc12 =a*b;
+//     document.write(sonuc12)
+// }
+// soner(12,7)
+
+
+
+
+
+
+//--------------------------------------------------------
+
+document.write('<hr />' +'Fonksiyon() =fonksiyonlarda length özelliği.'+'<hr />')
+function ornk (name,surName1,city,yas){
+    let result = ornk.length;
+    document.write(result)
 }
-soner(12,7)
-
-// document.write('<hr />' +'Fonksiyon() = '+'<hr />')
-// document.write('<hr />' +'Fonksiyon() = '+'<hr />')
+ornk('soner','hendem','istanbul',26)
 
 
 
+//--------------------------------------
 
-//  document.write(names8 + '<br/>')
+document.write('<hr />' +'Fonksiyon(ÖNEMLİ!!) = fonksiyonlarda arguments özelliği kullanımı (fonksiyona herhangi bir parametre tanımlanmadan bile gelebilecek tüm parametre değerlerinin alınmasını sağlar.)'+'<hr />')
+function ornk1(){
+    for(let i=0; i<arguments.length; i++){
+        document.write(arguments[i]+'<br/>');
+    }
+}
+ornk1('soner','hendem')
+function ornk2(){
+    for(let i=0; i<arguments.length; i++){
+        document.write(arguments[i]+'<br/>');
+    }
+}
+ornk2('soner','hendem','istanbul',26)
+
+
+
+//-----------------------------------------------
+document.write('<hr />' +'Fonksiyon(ÖNEMLİ!!) = caller = fonksiyonu çağıran diğer bir fonksiyon referans olarak alınarak tğm bilgilerinin elde edilmesini sağlar.      '+'<hr />')
+function esas(){
+    for(let i=0; i<esas.caller.arguments.length; i++){
+        document.write(diger.arguments[i]+'<br/>');
+    }
+}
+function diger(name2,surName2){
+   esas() 
+}
+diger('soner','hendem')
+
+
+
+//---------------------------------------------
+document.write('<hr />' +'Fonksiyon(ÖNEMLİ!!) = return = fonksiyonda return ifadesi içerisinde fonksiyon tanımlama ve fonskyisonu çağırma.      '+'<hr />')
+let person = function(){
+    let result = 'soner hendem';
+    return{
+        bringName:function(){
+            return result;
+        }
+    }
+}();
+let sonuc6 = person.bringName();
+document.write(sonuc6)
 //  document.write(names8 + '<br/>')
 //  document.write(names8 + '<br/>')
 //  document.write(names8 + '<br/>')
