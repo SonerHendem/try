@@ -76,5 +76,15 @@ console.log(opposite(12))
 // let operation =["+"];
 // console.log(basicOp())
 
- 
-   
+
+
+
+
+let numbers33=[1,8,55,40,45]
+
+function squareSum(numbers3){
+  
+  let sonuc7= numbers3.reduce((sum,num) => sum + (num * num), 0);
+  return sonuc7;
+}
+console.log(squareSum(numbers33))
