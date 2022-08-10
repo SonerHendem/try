@@ -1,31 +1,201 @@
-function soner(a,b){
-    return a+b
-}
-soner(20,10)
-function soner1(a,b){
-    return a+b
-}
-soner1(20,10)
-function soner2323(a,b){
-    return a+b
-}
-soner2323(20,10)
-function soner2qwew323(a,b){
-    return a+b
-}
-soner2qwew323(20,10)
-function sonerqwew2323(a,b){
-    return a+b
-}
-sonerqwew2323(20,10)
-document.write('<hr />' +'Fonksiyon(ÖNEMLİ!!) = return = fonksiyonda return ifadesi içerisinde fonksiyon tanımlama ve fonskyisonu çağırma.      '+'<hr />')
-let person = function(){
-    let result = 'soner hendem';
-    return{
-        bringName:function(){
-            return result;
-        }
-    }
-}();
-let sonuc6 = person.bringName();
-document.write(sonuc6)
+document.write('<hr />' +'NESNELER = NESNE TANIMLAMA '+'<hr />')
+let information = {name:'soner',surName:'hendem',birthDay:1997};
+let personName = information.name;
+let personSurName = information.surName;
+let personBirthDay = information.birthDay;
+
+document.write(' benim adım : '+personName + ' soy adım : '+personSurName+' benim yaşım : '+personBirthDay+ '<br/>')
+
+
+//-------------------------------------
+document.write(' <br/>'+' <br/>'+' <br/>'+'<hr />' +' NESNELER =NEW OPERATÖRÜ KULLANMA VE NESNEYİ ÇAĞIRMA!  '+'<hr />')
+
+let information1 = new Object();
+information1.name = 'sonerr';
+information1.surName = 'hendemm';
+information1.birthDay = 1998;
+
+let nameRender = information1.name;
+let surNameRender = information1.surName;
+let birthDayRender = information1.birthDay;
+
+
+document.write( 'name render : '+nameRender +  '<br/>')
+document.write( 'sur name  render : '+ surNameRender  +' <br/>')
+document.write( 'birth day render : '+birthDayRender+ '<br/>')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
+
+//-------------------------------------
+// document.write('<hr />' +' NESNELER =   !  '+'<hr />')
+
+//  document.write(   + '<br/>')
+
+
