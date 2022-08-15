@@ -79,40 +79,93 @@ let surName2 = ornek.surName;
 document.write(name2+ '<br/>')
 document.write( surName2  + '<br/>')
 
+//------------------------------------
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =nesneyi önceden belirleyip sonradan değer tanımlamak!  '+'<hr />')
+let information7 = {};
+information7.name = 'soner';
+information7.surName = 'hendem';
 
-
-
-//  document.write(   + '<br/>')
+let nameSurName = information7.name + information7.surName;
+document.write(  nameSurName + '<br/>')
 
 //------------------------------------
-document.write-(' <br/>'+' <br/>'+'<hr />' +' NESNELER =hello world!  '+'<hr />')
-
-//  document.write(   + '<br/>')
-
-//-------------------------------------
-document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
-
-//  document.write(   + '<br/>')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =nesneyi dizi olarak görererek herhangi bir özelliğin değerine ulaşmak  '+'<hr />')
+let information8 = {name : "soner",surName:'hendem'};
+let whatName =information8.name;
+let whatSurName =information8.surName;
+document.write( whatName+' '+whatSurName  + '<br/>')
 
 //-------------------------------------
-document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER = nesne içerisinedki bir özelliğe ait değerin değiştirilmesi  !  '+'<hr />')
+information9 = {name :'soner',surName:'hendem',ders:'javascript'};
+// ÖNEMLİ NOT:
+// let dersss = information9.ders; == bu şekilde bir depolama yapsaydık 'javascript' değeri 'PHP' DEĞERİ İLE DEĞİŞTİRİLEMEZDİ.
+information9.ders = 'PHP';
+document.write('kullanıcı : '+information9.name +' '+information9.surName +'<br/>'+' alınan eğitim :'+information9.ders   + '<br/>')
 
+//-------------------------------------
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =Nesne içerisinde fonksiyon tanımlama ve çağırma.   !  '+'<hr />')
+let information10 = {
+    name : 'soner', 
+    surName: 'hendem', 
+    uyari: function(){
+        document.write('ben nesne içi fonksiyon koduyum.')
+    }
+}
+information10.uyari();
 //document.write(   + '<br/>')
 
 //-------------------------------------
-document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =Nesne içerisinde fonksiyon nesnenin özellik değerlerine fonksiyon içerisinden ulaşma!  '+'<hr />')
+let information11 = {
+    name: 'soner',
+    surName: 'hendem',
+    detay: function(){
+        let nameValue = information11.name;
+        let surNameValue = information11.surName;
+        document.write(nameValue+' '+surNameValue+ '<br/>')
 
+    }
+};
+information11.detay();
 //  document.write(   + '<br/>')
 
 //-------------------------------------
-// document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =Nesne içerisinde fonksiyon fonksiyon içerisinde de özellik ve değer tanımlama ve çağırma!  '+'<hr />')
+let information12 = {
+    name: 'soner',
+    surName: 'hendem',
+    detay:function(){
+        this.age = '26';
+        this.job = 'web developer'
+    }
+}
+let writeName =information12.name;
+let writeSurName =information12.surName;
 
-//  document.write(   + '<br/>')
+information12.detay(); // fonksiyonu çağırmasaydık age,job verisine ulaşamazdık.
+let writeAge =information12.age;
+let writeJob =information12.job;
+
+
+document.write('Name :'+ writeName + '<br/>')
+document.write('Surname :'+ whatSurName + '<br/>')
+document.write('AGE :'+ writeAge + '<br/>')
+document.write('Job :'+ writeJob + '<br/>')
 
 //-------------------------------------
-// document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =Nesne içerisindeki fonksiyonda return ifadesi kullanımı. !  '+'<hr />')
+let information13 = {
+    detay: function(){
+        let name ='soner';
+        let surName = 'hendem';
+        let result = name +' '+surName;
+        return result;
+    }
+}
+let nameValue1 = information13.detay();
 
-//  document.write(   + '<br/>')
+document.write( nameValue1  + '<br/>')
 
 //-------------------------------------
 // document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
