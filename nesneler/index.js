@@ -164,23 +164,76 @@ let information13 = {
     }
 }
 let nameValue1 = information13.detay();
-
 document.write( nameValue1  + '<br/>')
 
 //-------------------------------------
-// document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =Nesnelerin Kapsama alanı.   !  '+'<hr />')
+let information14 = {
+    name:'soner',
+    surName:'hendem',
+    tarih:1996,
+    detay:function(){
+        let ifade = 'merhaba'
+        document.write(ifade + '<br/>')
+    }
+}
+let information15 = {
+    name:'tolunay',
+    surName:'berber',
+    tarih:1997,
+    detay:function(){
+        let ifade = 'selam';
+        document.write(ifade + '<br/>')
 
-//  document.write(   + '<br/>')
+    }
+}
+let name14 = information14.name;
+let tarih14 = information14.tarih;
+
+let name15 = information15.name;
+let tarih15 = information15.tarih;
+document.write(name14 +' '+tarih14   + '<br/>')
+information14.detay();
+document.write( name15 +' '+tarih15  + '<br/>')
+information15.detay(); 
+
+
 
 //-------------------------------------
-// document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =  Özeliik ve değerleri tanımlanmış bir nesneye daha sonradan ek özellik ve değerler tanımlama !  '+'<hr />')
+let information16 = {
+    name:'soner',
+    surName:'hendem',
+    birthDay:1996
+};
+let name16 = information16.name;
+let surName16 = information16.surName;
+let birthDay16 = information16.birthDay;
+document.write( name16  + '<br/>')
+document.write( surName16  + '<br/>')
+document.write( birthDay16  + '<br/>')
 
-//  document.write(   + '<br/>')
+
+information16.city ='istanbul';
+information16.job = 'developer';
+let city16 = information16.city;
+let job16 = information16.job;
+document.write(city16   + '<br/>')
+document.write( job16  + '<br/>')
 
 //-------------------------------------
-// document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
-
-//  document.write(   + '<br/>')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =nesne içerisindeki fonksiyona paramatre tanımlama ve fonksiyon çağırma!  '+'<hr />')
+let information17 = {
+    value:function(name,surName,age){
+        let nameValue = name;
+        let surNameValue = surName;
+        let ageValue = age;
+        let paragraf = 'merhaba benim adım '+nameValue+' '+surNameValue+' yaşım : '+ageValue
+        return paragraf;
+    }
+}
+let result17= information17.value('soner','hendem','26')
+document.write(result17   + '<br/>')
 
 //-------------------------------------
 // document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
