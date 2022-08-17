@@ -236,18 +236,18 @@ let result17= information17.value('soner','hendem','26')
 document.write(result17   + '<br/>')
 
 //-------------------------------------
-// document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER = heyy!! guncel  !  '+'<hr />')
 
 //  document.write(   + '<br/>')
 
 //-------------------------------------
-// document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =  nesnee! !  '+'<hr />')
 
 //  document.write(   + '<br/>')
 
 //-------------------------------------
-// document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
-
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER = guncel  !  '+'<hr />')
+let guncel ={ soner :'hendem'}
 //  document.write(   + '<br/>')
 
 //-------------------------------------
