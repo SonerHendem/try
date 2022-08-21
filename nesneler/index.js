@@ -266,7 +266,7 @@ document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
 //  document.write(   + '<br/>')
 
 //-------------------------------------
-// document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
+document.write(' <br/>'+' <br/>'+'<hr />' +' NESNELER =   !  '+'<hr />')
 
 //  document.write(   + '<br/>')
 
